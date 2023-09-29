@@ -344,7 +344,7 @@ class Bank {
 
 
 
-    //Upload All Accounts Informations From The File In ArrayList Method
+    //Upload All Accounts Information From The File In ArrayList Method
     public void uploadDataFile(String filename) {
         accounts.clear();
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
@@ -400,10 +400,10 @@ class Bank {
 }
 
 class Driver {
-    public static void main(String[] args) {
-        Bank bank = new Bank();
-        bank.uploadDataFile("Accounts.txt");
-        System.out.println("Welcome to the Bank System!");
-        bank.displayMainMenu();
-    }
+  public static void main(String[] args) {
+    Bank bank = new Bank();
+    bank.uploadDataFile("Accounts.txt");
+    System.out.println("Welcome to the Bank System!");
+    bank.displayMainMenu();
+  }
 }
